@@ -3,11 +3,11 @@ kind: Deployment
 metadata:
   name: vprodb
   labels:
-    app: vprodb
+    app: prod
 spec:
   selector:
     matchLabels:
-      app:
+      app: vprodb
   replicas: 1
   template:
     metadata:
