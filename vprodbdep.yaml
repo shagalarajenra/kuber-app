@@ -1,4 +1,4 @@
-apiVesrion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vprodb
@@ -7,7 +7,7 @@ metadata:
 spec:
   selector:
     matchlabels:
-      app: vprodb
+      app:
   replicas: 1
   templates:
     metadata:
